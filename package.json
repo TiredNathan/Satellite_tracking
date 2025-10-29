@@ -1,0 +1,39 @@
+{
+  "name": "satellite-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "electron.js",
+  "author": "GreatOldNathe",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "electron .",
+    "dist": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "build": {
+    "appId": "com.example.satellitetracker",
+    "productName": "Satellite Tracker",
+    "files": [
+      "dist/**/*",
+      "electron.js"
+    ],
+    "directories": {
+      "output": "release"
+    }
+  }
+}

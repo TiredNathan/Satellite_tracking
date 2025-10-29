@@ -1,0 +1,7 @@
+{
+  "name": "Satellite Pass Calculator and Simulator",
+  "description": "An application to calculate and display satellite passes for a given ground station. It fetches active satellite TLE data from CelesTrak and provides notifications for upcoming passes.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
